@@ -1,0 +1,27 @@
+
+<!-- saved from url=(0031)https://www.tldraw.com/reo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+    <script>
+      function handleMessage(event) {
+        // N.B. Strictly speaking, we should check the origin of the event
+        // but this isn't crucial for these analytics.
+        if (!event.data) return;
+        if (event.data.type === 'identify') {
+          window.Reo?.identify?.(event.data.payload || {});
+        }
+      }
+
+      window.addEventListener('message', handleMessage);
+    </script>
+    <script src="./reo.js.download"></script>
+    <script>
+      window.Reo.init({ clientID: '47839e47a5ed202' })
+    </script>
+  
+<div id="pi6w7a0g" style="font: status-bar !important"><div style="
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	left:-10000px;
+	visibility: hidden;
+"><iframe src="./saved_resource.html"></iframe></div></div></body></html>
